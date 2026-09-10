@@ -26,11 +26,6 @@ Open **http://localhost:5173**. Click **Try sample paper** for the built-in demo
 
 The initial dashboard is explicitly labeled **DEMO**. **Try sample paper** runs the same backend used for uploads. The sample has 12 questions, 60 marks, all five units, and three deliberate findings: Q8 missing, Q2/Q11 duplicated, and 8.3% Apply coverage below the default 20% threshold.
 
-## Your three-person team
-
-1. **Interface:** upload controls, dashboard, responsiveness and accessibility.
-2. **Backend:** parsing, rules, syllabus mapping and the AI adapter.
-3. **Testing and integration:** PDF handling, reports, test fixtures, CI and demo.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for exact ownership areas, GitHub setup, collaborator invitations, branches, pull requests and starter tasks. This project includes a local Git history and GitHub workflow files. A repository in your GitHub account still needs to be created and connected; it is not automatically published to GitHub.
 
