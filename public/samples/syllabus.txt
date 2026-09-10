@@ -1,0 +1,10 @@
+Unit 1: array, linked list, binary search
+Unit 2: stack, queue
+Unit 3: tree, AVL, balance
+Unit 4: graph, breadth first search, adjacency
+Unit 5: sort, quicksort, hash, collision
+CO1: array, linked list, binary search
+CO2: stack, queue
+CO3: tree, AVL, balance
+CO4: graph, breadth first search, adjacency
+CO5: sort, quicksort, hash, collision

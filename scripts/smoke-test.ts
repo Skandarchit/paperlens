@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import { SAMPLE_INPUT } from '../lib/audit/sample';
+const url = process.argv[2] ?? 'http://localhost:5173';
+assert.equal((await fetch(url)).status, 200);
+const health = await (await fetch(`${url}/api/health`)).json() as { status: string; aiAvailable: boolean };
+assert.equal(health.status, 'ok');
+const response = await fetch(`${url}/api/audit`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(SAMPLE_INPUT) });
+assert.equal(response.status, 200);
+const report = await response.json() as { totalMarks: number; issues: unknown[]; questions: unknown[] };
+assert.equal(report.totalMarks, 60); assert.equal(report.issues.length, 3); assert.equal(report.questions.length, 12);
+const invalid = await fetch(`${url}/api/audit`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+assert.equal(invalid.status, 400);
+for (const path of ['/samples/question-paper.pdf', '/samples/syllabus.txt', '/pdf.worker.min.mjs']) assert.equal((await fetch(url + path)).status, 200);
+console.log('HTTP smoke checks passed: page, real audit API, invalid request, PDF, syllabus and PDF worker.');

@@ -1,0 +1,28 @@
+export const SAMPLE_PAPER = `DEPARTMENT OF COMPUTER SCIENCE
+Data Structures & Algorithms - Semester IV
+Time: 3 hours | Maximum marks: 60
+Answer all 12 questions. Each question carries 5 marks.
+
+Q1. Define an array and state its memory representation. [5 marks] [Unit 1] [CO1]
+Q2. Explain the working of breadth first search. [5 marks] [Unit 4] [CO4]
+Q3. Apply binary search to find 23 in the sorted array [4, 9, 15, 23, 31]. [5 marks] [Unit 1] [CO1]
+Q4. Analyze the time complexity of quicksort in the worst case. [5 marks] [Unit 5] [CO5]
+Q5. List the basic operations on a stack. [5 marks] [Unit 2] [CO2]
+Q6. Explain the differences between a stack and a queue. [5 marks] [Unit 2] [CO2]
+Q7. Compare a binary search tree and an AVL tree. [5 marks] [Unit 3] [CO3]
+Q9. Evaluate the suitability of an adjacency list for a sparse graph. [5 marks] [Unit 4] [CO4]
+Q10. Design a hash table with collision handling for a student registry. [5 marks] [Unit 5] [CO5]
+Q11. Explain the working of breadth first search. [5 marks] [Unit 4] [CO4]
+Q12. Analyze how tree balance affects search performance. [5 marks] [Unit 3] [CO3]
+Q13. Describe the process of inserting an element into a linked list. [5 marks] [Unit 1] [CO1]`;
+export const SAMPLE_SYLLABUS = `Unit 1: array, linked list, binary search
+Unit 2: stack, queue
+Unit 3: tree, AVL, balance
+Unit 4: graph, breadth first search, adjacency
+Unit 5: sort, quicksort, hash, collision
+CO1: array, linked list, binary search
+CO2: stack, queue
+CO3: tree, AVL, balance
+CO4: graph, breadth first search, adjacency
+CO5: sort, quicksort, hash, collision`;
+export const SAMPLE_INPUT = { text: SAMPLE_PAPER, syllabus: SAMPLE_SYLLABUS, expectedMarks: 60, expectedQuestions: null, minApply: 20, filename: 'Data Structures · Semester IV' };
